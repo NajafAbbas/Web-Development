@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4b400;
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.search-bar::placeholder {
+    color: #999;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.highlight-text {
+    color: #007bff;
+    /* Acha Blue Color */
+    font-family: 'Georgia', serif;
+    /* Stylish Font */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.intro-image {
+    max-width: 20%;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.intro-text p span {
+    font-size: 1.2rem;
+    color: #007bff;
+    /* Bright blue color */
+    font-family: 'Georgia', serif;
+    /* Elegant serif font */
+    font-style: italic;
+    /* Italic style for emphasis */
+    font-weight: bold;
+    /* Bold for prominence */
+}
+
+.education-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    /* Bright blue color for the degree title */
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    /* Elegant font for the degree title */
+}
+
+.education-item p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.projects-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    /* Bright blue color for project titles */
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    /* Elegant font for project titles */
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    /* Highlight border color on focus */
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    /* Darker button color on hover */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #343a40;
+    /* Dark background color */
+    color: #ffffff;
+    /* White text color */
+    padding: 2rem 0;
+    /* Vertical padding */
+}
+
+footer a {
+    color: #ffffff;
+    /* White link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #f8f9fa;
+    /* Light color on hover */
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+    /* Spacing between links */
+}
+
+footer .list-unstyled li a {
+    font-size: 1rem;
+    /* Link font size */
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .social-media a {
+    font-size: 1.5rem;
+    /* Icon size */
+    margin-left: 1rem;
+    /* Space between icons */
+    color: #ffffff;
+    /* Icon color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+footer .social-media a:hover {
+    color: #f8f9fa;
+    /* Light color on hover */
+}
+
+footer .text-center p {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    /* Smaller text size for copyright */
+}
+
+@media (max-width: 768px) {
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav a {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .intro-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .intro-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .search-bar {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

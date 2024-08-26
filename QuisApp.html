@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Quiz App</title>
+    <link rel="stylesheet" href="QuisApp.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div id="question-container">
+            <h1 id="question">Question will go here</h1>
+            <form id="answer-form">
+                <div class="answer-option">
+                    <input type="radio" name="answer" id="option1" value="0">
+                    <label for="option1">Option 1</label>
+                </div>
+                <div class="answer-option">
+                    <input type="radio" name="answer" id="option2" value="1">
+                    <label for="option2">Option 2</label>
+                </div>
+                <div class="answer-option">
+                    <input type="radio" name="answer" id="option3" value="2">
+                    <label for="option3">Option 3</label>
+                </div>
+                <div class="answer-option">
+                    <input type="radio" name="answer" id="option4" value="3">
+                    <label for="option4">Option 4</label>
+                </div>
+                <button type="button" id="next-btn">Next</button>
+            </form>
+        </div>
+        <div id="result-container" class="hidden">
+            <h2 id="result"></h2>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+
+    <script src="QuisApp.js"></script>
+</body>
+
+</html>
