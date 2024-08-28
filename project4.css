@@ -1,0 +1,35 @@
+.img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    /* display: block;
+    margin: auto;
+    position: relative;
+    top: 120px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+span {
+    color: gray;
+}

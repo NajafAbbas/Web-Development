@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Simple CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* :root for CSS Variables */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+
+/* Applying base styles */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+/* Link styles */
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+
+/* Container class for centering content */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/* Flexbox for layout */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Grid for layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Heading styles */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Margin and padding utility classes */
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+
+/* Text alignment utility classes */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+/* Basic button styles */
+
+button,
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive adjustments */
+
+.btn {
+    position: absolute;
+    right: 300px;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
