@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232F3E;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #febd69;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 16px;
+}
+
+.navbar-links a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.pricing {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card .price {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color: #febd69;
+}
+
+.features {
+    background-color: #232F3E;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #fff;
+    color: #232F3E;
+    border-radius: 8px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card i {
+    font-size: 40px;
+    color: #febd69;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonials {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: #232F3E;
+    margin-bottom: 40px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    position: relative;
+    font-style: italic;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.testimonial-card h4 {
+    font-size: 16px;
+    color: #777;
+}
+
+.footer {
+    background-color: #232F3E;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-bottom p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #febd69;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #febd69;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #aaa;
+}
